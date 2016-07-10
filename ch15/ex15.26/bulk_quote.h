@@ -15,7 +15,7 @@ public:
     { std::cout << "Bulk_quote : copy constructor\n"; }
 
     // move constructor
-    Bulk_quote(Bulk_quote&& bq) : Disc_quote(std::move(bq)) noexcept
+    Bulk_quote(Bulk_quote&& bq) noexcept : Disc_quote(std::move(bq)) 
     {
         std::cout << "Bulk_quote : move constructor\n";
     }
